@@ -1,0 +1,52 @@
+/* Clubs Page Specific Styles */
+
+.club-banner-1 {
+    background: linear-gradient(to right, #52796F, #84A98C);
+}
+
+.club-banner-2 {
+    background: linear-gradient(to right, #84A98C, #CAD2C5);
+}
+
+.club-banner-3 {
+    background: linear-gradient(to right, #52796F, #354F52);
+}
+
+.club-banner-4 {
+    background: linear-gradient(to right, #84A98C, #52796F);
+}
+
+.club-banner-5 {
+    background: linear-gradient(to right, #CAD2C5, #84A98C);
+}
+
+.club-banner-6 {
+    background: linear-gradient(to right, #52796F, #84A98C);
+}
+
+.club-banner-7 {
+    background: linear-gradient(to right, #354F52, #52796F);
+}
+
+.club-banner-8 {
+    background: linear-gradient(to right, #84A98C, #CAD2C5);
+}
+
+#clubs-container .card {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

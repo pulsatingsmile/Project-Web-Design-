@@ -1,0 +1,30 @@
+/* Events Page Specific Styles */
+
+.capacity-bar {
+    width: 100%;
+    background-color: var(--background);
+    border-radius: 9999px;
+    height: 0.5rem;
+}
+
+.capacity-fill {
+    background-color: var(--nav-primary);
+    height: 0.5rem;
+    border-radius: 9999px;
+    transition: width 0.3s;
+}
+
+#events-container .card {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,15 @@
+/* Dashboard Page Specific Styles */
+
+.space-y-3 > * + * {
+    margin-top: 0.75rem;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+/* Dashboard item hover effect */
+.p-3.bg-background:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}

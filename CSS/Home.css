@@ -1,0 +1,20 @@
+/* Home Page Specific Styles */
+
+/* Hero section animations */
+.space-y-6 > * + * {
+    margin-top: 1.5rem;
+}
+
+.space-y-3 > * + * {
+    margin-top: 0.75rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+/* Quick access cards hover effect */
+.card:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}

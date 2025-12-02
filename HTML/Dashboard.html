@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SCMS</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="../CSS/Common.css">
+    <link rel="stylesheet" href="../CSS/Dashboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-white font-semibold poppins">SCMS</span>
+                </div>
+                
+                <div class="flex space-x-1 md:space-x-4">
+                    <a href="Home.html" class="nav-btn">
+                        <i data-lucide="home" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Home</span>
+                    </a>
+                    <a href="Dashboard.html" class="nav-btn active">
+                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Dashboard</span>
+                    </a>
+                    <a href="Announcement.html" class="nav-btn">
+                        <i data-lucide="megaphone" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Announcements</span>
+                    </a>
+                    <a href="Events.html" class="nav-btn">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Events</span>
+                    </a>
+                    <a href="Clubs.html" class="nav-btn">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Clubs</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Greeting -->
+            <div class="mb-8">
+                <h1 class="text-text-primary poppins">Welcome, Student</h1>
+                <p class="text-text-secondary text-sm mt-1">Last visited: Announcements Page</p>
+            </div>
+
+            <!-- Main Grid -->
+            <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                <!-- Saved Announcements -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="bookmark" class="w-5 h-5 text-nav-primary"></i>
+                        <h3 class="text-text-primary poppins">Saved Announcements</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Campus Closure - Holiday</p>
+                            <p class="text-text-secondary text-xs mt-1">Dec 25, 2024</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Final Exam Schedule Released</p>
+                            <p class="text-text-secondary text-xs mt-1">Dec 10, 2024</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Library Extended Hours</p>
+                            <p class="text-text-secondary text-xs mt-1">Dec 5, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registered Events -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="calendar" class="w-5 h-5 text-secondary"></i>
+                        <h3 class="text-text-primary poppins">Registered Events</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Tech Workshop</p>
+                            <p class="text-text-secondary text-xs mt-1">Dec 15, 2024 at 2:00 PM</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Career Fair</p>
+                            <p class="text-text-secondary text-xs mt-1">Dec 20, 2024 at 10:00 AM</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Sports Tournament</p>
+                            <p class="text-text-secondary text-xs mt-1">Jan 5, 2025 at 3:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joined Clubs -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="users" class="w-5 h-5 text-nav-primary"></i>
+                        <h3 class="text-text-primary poppins">Joined Clubs</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Coding Club</p>
+                            <p class="text-text-secondary text-xs mt-1">150 members</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Photography Club</p>
+                            <p class="text-text-secondary text-xs mt-1">85 members</p>
+                        </div>
+                        <div class="p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors cursor-pointer">
+                            <p class="text-text-primary font-medium text-sm">Debate Society</p>
+                            <p class="text-text-secondary text-xs mt-1">62 members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Components -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Theme Toggle -->
+                <div class="card p-6">
+                    <h4 class="text-text-primary mb-4 poppins">Theme Settings</h4>
+                    <button onclick="toggleTheme()" id="theme-toggle" class="flex items-center gap-3 w-full p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors">
+                        <i data-lucide="moon" class="w-5 h-5 text-nav-primary"></i>
+                        <span class="text-text-primary">Switch to Dark Mode</span>
+                    </button>
+                </div>
+
+                <!-- User Settings -->
+                <div class="card p-6">
+                    <h4 class="text-text-primary mb-4 poppins">User Settings</h4>
+                    <div class="space-y-2">
+                        <button class="w-full text-left p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors text-text-primary">
+                            Edit Profile
+                        </button>
+                        <button class="w-full text-left p-3 bg-background rounded-lg hover:bg-opacity-80 transition-colors text-text-primary">
+                            Notification Preferences
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm" id="footer-text"></p>
+        </div>
+    </footer>
+
+    <script src="../JS/Common.js"></script>
+    <script src="../JS/Dasboard.js"></script>
+</body>
+</html>
