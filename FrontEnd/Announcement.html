@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - SCMS</title>
+    <title>Announcements - SCMS</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +16,8 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <link rel="stylesheet" href="../CSS/Common.css">
-    <link rel="stylesheet" href="../CSS/Events.css">
+    <link rel="stylesheet" href="/FrontEnd/dist/CSS/Common.css">
+    <link rel="stylesheet" href="/FrontEnd/dist/CSS/Home.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,23 +29,23 @@
                 </div>
                 
                 <div class="flex space-x-1 md:space-x-4">
-                    <a href="Home.html" class="nav-btn">
+                    <a href="home.html" class="nav-btn">
                         <i data-lucide="home" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Home</span>
                     </a>
-                    <a href="Dashboard.html" class="nav-btn">
+                    <a href="dashboard.html" class="nav-btn">
                         <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Dashboard</span>
                     </a>
-                    <a href="Announcement.html" class="nav-btn">
+                    <a href="announcements.html" class="nav-btn active">
                         <i data-lucide="megaphone" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Announcements</span>
                     </a>
-                    <a href="Events.html" class="nav-btn active">
+                    <a href="events.html" class="nav-btn">
                         <i data-lucide="calendar" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Events</span>
                     </a>
-                    <a href="Clubs.html" class="nav-btn">
+                    <a href="clubs.html" class="nav-btn">
                         <i data-lucide="users" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Clubs</span>
                     </a>
@@ -59,32 +59,32 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <!-- Top Bar -->
             <div class="mb-6">
-                <h1 class="text-text-primary mb-6 poppins">Campus Events</h1>
+                <h1 class="text-text-primary mb-6 poppins">Announcements</h1>
                 
                 <!-- Search Bar -->
                 <div class="relative mb-4">
                     <i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary"></i>
                     <input
                         type="text"
-                        id="event-search"
-                        placeholder="Search events..."
+                        id="announcement-search"
+                        placeholder="Search announcements..."
                         class="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-nav-primary text-text-primary"
-                        oninput="filterEvents()"
+                        oninput="filterAnnouncements()"
                     />
                 </div>
 
                 <!-- Category Filters -->
-                <div class="flex flex-wrap gap-2" id="event-filters">
+                <div class="flex flex-wrap gap-2" id="announcement-filters">
                     <button onclick="filterByCategory('All')" class="filter-btn active" data-category="All">All</button>
-                    <button onclick="filterByCategory('Workshop')" class="filter-btn" data-category="Workshop">Workshop</button>
-                    <button onclick="filterByCategory('Social')" class="filter-btn" data-category="Social">Social</button>
                     <button onclick="filterByCategory('Academic')" class="filter-btn" data-category="Academic">Academic</button>
-                    <button onclick="filterByCategory('Sport')" class="filter-btn" data-category="Sport">Sport</button>
+                    <button onclick="filterByCategory('Events')" class="filter-btn" data-category="Events">Events</button>
+                    <button onclick="filterByCategory('Emergency')" class="filter-btn" data-category="Emergency">Emergency</button>
+                    <button onclick="filterByCategory('General')" class="filter-btn" data-category="General">General</button>
                 </div>
             </div>
 
-            <!-- Event Cards -->
-            <div class="grid md:grid-cols-2 gap-6" id="events-container"></div>
+            <!-- Announcement Cards -->
+            <div class="grid gap-4" id="announcements-container"></div>
         </div>
     </main>
 
@@ -120,7 +120,7 @@
         </button>
     </div>
 
-    <script src="../JS/Common.js"></script>
-    <script src="../JS/Events.js"></script>
+    <script src="/FrontEnd/dist/JS/Common.js"></script>
+    <script src="/FrontEnd/dist/JS/Announcement.js"></script>
 </body>
 </html>
