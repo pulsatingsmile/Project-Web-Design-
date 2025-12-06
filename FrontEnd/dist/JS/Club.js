@@ -127,7 +127,7 @@ function renderClubs() {
         club.category
       }</span>
                     <div class="flex items-center gap-1 text-text-secondary text-sm">
-                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <img src="./dist/Icons/Users.svg" alt="" class="w-4 h-4">
                         <span>${club.members} members</span>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ function renderClubs() {
                     <button onclick="viewDetails(${
                       club.id
                     })" class="btn btn-secondary btn-sm">
-                        <i data-lucide="eye" class="w-4 h-4"></i>
+                        <img src="./dist/Icons/EyeBlack.svg" alt="" class="w-4 h-4">
                     </button>
                 </div>
             </div>

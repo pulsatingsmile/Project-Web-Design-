@@ -4,7 +4,7 @@ const eventsData = [
     id: 1,
     title: "AI & Machine Learning Workshop",
     category: "Workshop",
-    date: "Dec 28, 2024",
+    date: "Dec 28, 2025",
     time: "2:00 PM - 5:00 PM",
     location: "CS Building, Room 301",
     capacity: 50,
@@ -24,7 +24,7 @@ const eventsData = [
     capacity: 500,
     registered: 312,
     description:
-      "Meet recruiters from top companies and explore career opportunities.",
+      "Meet recruiters from top companies and explore career opportunities at the upcoming event.",
     fullDescription:
       "The Annual Career Fair brings together over 50 leading companies seeking talented students for internships and full-time positions. Dress professionally, bring multiple copies of your resume, and prepare your elevator pitch. Company representatives will conduct on-spot interviews and share information about their organizations.",
   },
@@ -52,7 +52,7 @@ const eventsData = [
     capacity: 400,
     registered: 289,
     description:
-      "Celebrate diversity with performances, food, and cultural exhibitions.",
+      "Celebrate diversity with performances, food stall, and cultural exhibitions.",
     fullDescription:
       "Experience a night of cultural celebration featuring dance performances, music, drama, and cuisine from around the world. Students from different backgrounds will showcase their heritage through various art forms. Food stalls will offer international delicacies. This is a free event open to all students and faculty.",
   },
@@ -79,7 +79,8 @@ const eventsData = [
     location: "Art Gallery",
     capacity: 40,
     registered: 28,
-    description: "Learn photography techniques and showcase your work.",
+    description:
+      "Learn photography techniques and showcase your work.",
     fullDescription:
       "Photography enthusiasts are invited to this special event featuring an exhibition of student work followed by a hands-on workshop. Professional photographers will share tips on composition, lighting, and editing. Bring your camera (DSLR or smartphone). Selected works will be featured in the campus magazine.",
   },
@@ -125,11 +126,11 @@ function renderEvents() {
                     
                     <div class="space-y-2 text-sm">
                         <div class="flex items-center gap-2 text-text-secondary">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                            <img src="/FrontEnd/dist/Icons/CalendarBlack.svg" class="w-4 h-4">
                             <span>${event.date} at ${event.time}</span>
                         </div>
                         <div class="flex items-center gap-2 text-text-secondary">
-                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <img src="./dist/Icons/Location.svg" alt="" class="w-4 h-4">
                             <span>${event.location}</span>
                         </div>
                     </div>
@@ -137,7 +138,7 @@ function renderEvents() {
                     <div>
                         <div class="flex items-center justify-between text-sm mb-1">
                             <div class="flex items-center gap-1 text-text-secondary">
-                                <i data-lucide="users" class="w-4 h-4"></i>
+                            <img src="./dist/Icons/Users.svg" alt="" class="w-5 h-5">
                                 <span>Capacity</span>
                             </div>
                             <span class="text-text-secondary">${
@@ -160,7 +161,7 @@ function renderEvents() {
                         <button onclick="viewDetails(${
                           event.id
                         })" class="btn btn-secondary btn-sm flex-1">
-                            <i data-lucide="eye" class="w-4 h-4 mr-2"></i>
+                          <img src="./dist/Icons/EyeBlack.svg" alt="" class="w-4 h-4 mr-2">
                             View Details
                         </button>
                     </div>

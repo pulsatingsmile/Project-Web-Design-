@@ -8,7 +8,7 @@ const announcementsData = [
       "Campus will be closed from December 24-26 for the holiday season.",
     fullContent:
       "The campus will be closed from December 24th to December 26th for the holiday season. All facilities including the library, cafeteria, and administrative offices will be unavailable during this period. Emergency contact information is available at the security office.",
-    date: "Dec 20, 2024",
+    date: "Dec 20, 2025",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const announcementsData = [
       "The final examination schedule for Fall 2024 is now available.",
     fullContent:
       "The final examination schedule for Fall 2024 semester has been released. Students can view their exam schedules on the student portal. Please note that exam conflicts should be reported to the registrar's office by December 10th. Make sure to check the exam venue and timing carefully.",
-    date: "Dec 18, 2024",
+    date: "Dec 18, 2025",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const announcementsData = [
     description: "Fire drill scheduled for December 22nd at 10:00 AM.",
     fullContent:
       "An emergency fire drill is scheduled for December 22nd at 10:00 AM. All students and staff are required to participate. Please evacuate buildings immediately when the alarm sounds and proceed to designated assembly points. Do not use elevators during the drill.",
-    date: "Dec 15, 2024",
+    date: "Dec 15, 2025",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const announcementsData = [
       "Register now for the upcoming technology workshop on AI and Machine Learning.",
     fullContent:
       "Registration is now open for our Technology Workshop on AI and Machine Learning. The workshop will be held on December 28th from 2:00 PM to 5:00 PM in the Computer Science Building, Room 301. Industry experts will be conducting hands-on sessions. Limited seats available - register on the events page.",
-    date: "Dec 12, 2024",
+    date: "Dec 12, 2025",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const announcementsData = [
     description: "Library will have extended hours during exam period.",
     fullContent:
       "To support students during the examination period, the library will extend its operating hours from December 15th to January 10th. The library will be open from 7:00 AM to 11:00 PM on weekdays and 9:00 AM to 9:00 PM on weekends. Study rooms can be booked online.",
-    date: "Dec 10, 2024",
+    date: "Dec 10, 2025",
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const announcementsData = [
       "Annual career fair featuring top companies and recruitment opportunities.",
     fullContent:
       "The Annual Career Fair will take place on January 15th, 2025, from 10:00 AM to 4:00 PM at the Main Auditorium. Over 50 companies will be participating, offering internship and full-time positions. Students are encouraged to bring multiple copies of their resumes and dress professionally.",
-    date: "Dec 8, 2024",
+    date: "Dec 8, 2025",
   },
 ];
 
@@ -104,13 +104,13 @@ function renderAnnouncements() {
                     <button onclick="saveAnnouncement(${
                       announcement.id
                     })" class="btn btn-secondary btn-sm flex-1 sm:flex-none">
-                        <i data-lucide="bookmark" class="w-4 h-4 mr-2"></i>
+                    <img src="./dist/Icons/BookMark.svg" alt="" class="w-4 h-4 mr-2">
                         Save
                     </button>
                     <button onclick="viewDetails(${
                       announcement.id
                     })" class="btn btn-primary btn-sm flex-1 sm:flex-none">
-                        <i data-lucide="eye" class="w-4 h-4 mr-2"></i>
+                        <img src="./dist/Icons/EyeWhite.svg" alt="" class="w-4 h-4 mr-2">
                         View Details
                     </button>
                 </div>

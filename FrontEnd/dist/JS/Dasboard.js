@@ -9,12 +9,12 @@ function toggleTheme() {
 
   if (isDarkMode) {
     themeToggle.innerHTML = `
-            <i data-lucide="sun" class="w-5 h-5 text-nav-primary"></i>
+            <img src="./dist/Icons/Sun.svg" alt="" class="w-6 h-6 text-nav-primary">
             <span class="text-text-primary">Switch to Light Mode</span>
         `;
   } else {
     themeToggle.innerHTML = `
-            <i data-lucide="moon" class="w-5 h-5 text-nav-primary"></i>
+            <img src="./dist/Icons/Moon.svg" alt="" class="w-6 h-6 text-nav-primary">
             <span class="text-text-primary">Switch to Dark Mode</span>
         `;
   }
